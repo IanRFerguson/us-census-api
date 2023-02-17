@@ -1,0 +1,23 @@
+<html>
+{% extends "base.html" %}
+
+<body>
+    {% block content %}
+    <div class="content_box">
+        <h2>API Request Results</h2>
+    </div>
+    <div class="content_box" style="padding: 0">
+        <table class="table table-striped table-hover">
+            <thead>
+                {% for var in column_headers %}
+                <th>{{ var }}</th>
+                {% endfor %}
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    {% endblock %}
+</body>
+
+</html>

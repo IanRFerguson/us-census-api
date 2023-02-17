@@ -1,0 +1,3 @@
+total_population: "https://api.census.gov/data/2020/dec/pl?get=NAME,P1_001N&for=county:*&in=state:{}&key={}"
+
+

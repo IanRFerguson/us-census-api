@@ -1,0 +1,40 @@
+<html>
+{% extends "base.html" %}
+
+<body>
+    {% block content %}
+    <div class="content_box">
+        <h2>About this Project</h2>
+        <p>
+            Select a state and mapping variable below. The app will make a call to the US Census API, retrieve the data,
+            and process an output map. Check the <a href="{{ url_for('routes.results') }}">results page</a> to see your
+            output!
+        </p>
+    </div>
+    <div class="content_box">
+        <form action="{{ url_for('routes.index') }}" method="POST">
+            <label for="state">State</label>
+            <br>
+            <select name="state" id="state" class="form-control" style="width: 35%; margin: 0 auto;">
+                <option value="#"></option>
+                {% for s in states %}
+                <option value="{{ s }}">{{ s }}</option>
+                {% endfor %}
+            </select>
+            <br><br>
+            <label for="variable">Variable Name</label>
+            <br>
+            <select name="variable" id="variable" class="form-control" style="width: 35%; margin: 0 auto;">
+                <option value="#"></option>
+                {% for s in variable_options %}
+                <option value="{{ s }}">{{ s }}</option>
+                {% endfor %}
+            </select>
+            <br><br>
+            <button class="btn btn-primary" type="submit">Send Request</button>
+        </form>
+    </div>
+    {% endblock %}
+</body>
+
+</html>

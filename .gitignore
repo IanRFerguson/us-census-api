@@ -1,0 +1,7 @@
+*.pyc
+*.env
+*ipynb*
+
+###
+
+census_app/templates/output
