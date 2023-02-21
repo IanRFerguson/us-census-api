@@ -3,6 +3,7 @@ import us
 import os
 import logging
 import glob
+from time import sleep
 
 from flask import render_template, redirect, url_for, flash, request
 from census_app.routes import bp
@@ -115,8 +116,36 @@ def render_map(filename: str):
 
 @bp.route("/dev_map_route", methods=["GET"])
 def dev_render_map():
+    """
+    DEV FUNCTION
+    """
+
     from census_app.results.results import get_all_output_paths
 
     test = get_all_output_paths()[0]
 
     return redirect(url_for("routes.render_map", filename=test))
+
+
+@bp.route("/peace-out", methods=["GET"])
+def peace_out():
+    """
+    DEV FUNCTION
+    """
+
+    static_paths = os.path.join(here, "static", "output", "**/*.html")
+    all_files = [x for x in glob.glob(static_paths, recursive=True)]
+
+    logging.info(all_files)
+
+    for file in all_files:
+        try:
+            os.remove(file)
+            logging.info(f"Removed {file.split('/')[-1].replace('.html', '')}")
+
+        except Exception as e:
+            logging.error(f"Failed to remove file [exception={e}]")
+
+    flash("All output files removed")
+
+    return redirect(url_for("routes.index"))

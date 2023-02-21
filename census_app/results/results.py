@@ -32,6 +32,9 @@ def parse_filename(x: str) -> list:
     if temp_var == "totalPopulation":
         var = "Total Population"
 
+    elif temp_var == "popPctChange":
+        var = "Population Percentage Change"
+
     timestamp = x.split("_")[2].split("timestamp-")[1].replace("-", "/")
 
     return [state_name, var, timestamp]

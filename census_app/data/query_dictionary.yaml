@@ -1,6 +1,5 @@
 totalPopulation: "https://api.census.gov/data/2020/dec/pl?get=NAME,P1_001N&for=county:*&in=state:{}&key={}"
+
 popPctChange: 
-  - ""
-  - ""
-
-
+  - "https://api.census.gov/data/2000/dec/sf1?get=P001001,NAME&for=county:*&in=state:{}&key={}"
+  - "https://api.census.gov/data/2020/dec/pl?get=NAME,P1_001N&for=county:*&in=state:{}&key={}"

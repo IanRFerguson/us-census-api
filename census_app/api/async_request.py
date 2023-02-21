@@ -42,7 +42,7 @@ def build_api_call(state: str, variable: str):
 
     # Call data from Census API and build DataFrame
     logging.info("Sending Census request...")
-    census_data = get_api_data(state_name=state, variable=variable)
+    census_data = get_api_data(state=state, variable=variable)
 
     # Render map and save output
     logging.info("Building map...")
