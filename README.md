@@ -22,3 +22,12 @@ This is a lightweight `Flask` applicaiton that queries the US Census API, cleans
 * You can click on the `View` anchor for each request to see a customized rendering of the map
 
 <img src="./images/example.png" width="65%">
+
+
+### Sticking Points
+
+* This app can be *much* more abstract ... in its current form it would be hard to incorporate more Census API request types easily
+  
+* Standardizing the API responses was a bit laborious, as different years have different variable names that must be standardized before computation
+
+* This project required me to research the data types that do (and don't!) work well with the `Folium` library ... this required extra standardizing and a bit of trial and error

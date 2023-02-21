@@ -31,5 +31,7 @@ services:
     depends_on:
       - redis
     command: sh -c "rq worker census --url redis://redis:6379/0"
+    volumes:
+      - ".:/var/www/CENSUS_APP"
     links:
       - redis
