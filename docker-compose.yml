@@ -1,0 +1,35 @@
+version: '3.7'
+services:
+  app:
+    image: app-image
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    command: sh -c "python3 wsgi.py"
+    env_file:
+      - ./census_app/.env
+    ports:
+      - "5000:5000"
+    volumes:
+      - ".:/var/www/CENSUS_APP"
+    links:
+      - redis:redis
+    depends_on:
+      - redis
+    stdin_open: true
+    tty: true
+
+  redis:
+    image: redis:4.0.6-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./redis:/redis
+
+  worker:
+    image: app-image:latest
+    depends_on:
+      - redis
+    command: sh -c "rq worker census --url redis://redis:6379/0"
+    links:
+      - redis

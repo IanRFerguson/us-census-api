@@ -5,6 +5,8 @@ import logging
 from dotenv import load_dotenv
 
 here = os.path.abspath(os.path.dirname(__file__))
+data_path = os.path.join(here, "data")
+
 logging.basicConfig(level=logging.INFO)
 load_dotenv(os.path.join(here, ".env"))
 

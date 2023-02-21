@@ -4,5 +4,7 @@
 
 ###
 
-census_app/templates/output
-census_app/shapes
+dump.rdb
+census_app/static/output
+census_app/data/tl_2020_us_county
+test_data.csv

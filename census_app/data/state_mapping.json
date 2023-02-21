@@ -1,0 +1,352 @@
+{
+     "Alabama": {
+          "coord_list": [
+               32.31823,
+               -86.902298
+          ],
+          "zoom": 7
+     },
+     "Alaska": {
+          "coord_list": [
+               66.160507,
+               -153.36914099999998
+          ],
+          "zoom": 7
+     },
+     "Arizona": {
+          "coord_list": [
+               34.048927,
+               -111.09373500000001
+          ],
+          "zoom": 7
+     },
+     "Arkansas": {
+          "coord_list": [
+               34.799999,
+               -92.199997
+          ],
+          "zoom": 7
+     },
+     "California": {
+          "coord_list": [
+               36.778259000000006,
+               -119.41793100000001
+          ],
+          "zoom": 7
+     },
+     "Colorado": {
+          "coord_list": [
+               39.113014,
+               -105.35888700000001
+          ],
+          "zoom": 7
+     },
+     "Connecticut": {
+          "coord_list": [
+               41.599998,
+               -72.699997
+          ],
+          "zoom": 7
+     },
+     "Delaware": {
+          "coord_list": [
+               39.0,
+               -75.5
+          ],
+          "zoom": 7
+     },
+     "Florida": {
+          "coord_list": [
+               27.994402,
+               -81.760254
+          ],
+          "zoom": 7
+     },
+     "Georgia": {
+          "coord_list": [
+               33.247875,
+               -83.441162
+          ],
+          "zoom": 7
+     },
+     "Hawaii": {
+          "coord_list": [
+               19.741754999999998,
+               -155.844437
+          ],
+          "zoom": 7
+     },
+     "Idaho": {
+          "coord_list": [
+               44.068203000000004,
+               -114.742043
+          ],
+          "zoom": 7
+     },
+     "Illinois": {
+          "coord_list": [
+               40.0,
+               -89.0
+          ],
+          "zoom": 7
+     },
+     "Indiana": {
+          "coord_list": [
+               40.273502,
+               -86.126976
+          ],
+          "zoom": 7
+     },
+     "Iowa": {
+          "coord_list": [
+               42.032973999999996,
+               -93.58154300000001
+          ],
+          "zoom": 7
+     },
+     "Kansas": {
+          "coord_list": [
+               38.5,
+               -98.0
+          ],
+          "zoom": 7
+     },
+     "Kentucky": {
+          "coord_list": [
+               37.839333,
+               -84.27002
+          ],
+          "zoom": 7
+     },
+     "Louisiana": {
+          "coord_list": [
+               30.39183,
+               -92.329102
+          ],
+          "zoom": 7
+     },
+     "Maine": {
+          "coord_list": [
+               45.367584,
+               -68.97216800000001
+          ],
+          "zoom": 7
+     },
+     "Maryland": {
+          "coord_list": [
+               39.045753000000005,
+               -76.641273
+          ],
+          "zoom": 7
+     },
+     "Massachusetts": {
+          "coord_list": [
+               42.407211,
+               -71.382439
+          ],
+          "zoom": 7
+     },
+     "Michigan": {
+          "coord_list": [
+               44.182204999999996,
+               -84.50683599999999
+          ],
+          "zoom": 7
+     },
+     "Minnesota": {
+          "coord_list": [
+               46.39241,
+               -94.63623
+          ],
+          "zoom": 7
+     },
+     "Mississippi": {
+          "coord_list": [
+               33.0,
+               -90.0
+          ],
+          "zoom": 7
+     },
+     "Missouri": {
+          "coord_list": [
+               38.573935999999996,
+               -92.60376
+          ],
+          "zoom": 7
+     },
+     "Montana": {
+          "coord_list": [
+               46.96526,
+               -109.53369099999999
+          ],
+          "zoom": 7
+     },
+     "Nebraska": {
+          "coord_list": [
+               41.5,
+               -100.0
+          ],
+          "zoom": 7
+     },
+     "Nevada": {
+          "coord_list": [
+               39.876019,
+               -117.224121
+          ],
+          "zoom": 7
+     },
+     "New Hampshire": {
+          "coord_list": [
+               44.0,
+               -71.5
+          ],
+          "zoom": 7
+     },
+     "New Jersey": {
+          "coord_list": [
+               39.833851,
+               -74.871826
+          ],
+          "zoom": 7
+     },
+     "New Mexico": {
+          "coord_list": [
+               34.307144,
+               -106.01806599999999
+          ],
+          "zoom": 7
+     },
+     "New York": {
+          "coord_list": [
+               43.0,
+               -75.0
+          ],
+          "zoom": 7
+     },
+     "North Carolina": {
+          "coord_list": [
+               35.782169,
+               -80.79345699999999
+          ],
+          "zoom": 7
+     },
+     "North Dakota": {
+          "coord_list": [
+               47.650589000000004,
+               -100.437012
+          ],
+          "zoom": 7
+     },
+     "Ohio": {
+          "coord_list": [
+               40.367474,
+               -82.996216
+          ],
+          "zoom": 7
+     },
+     "Oklahoma": {
+          "coord_list": [
+               36.084621000000006,
+               -96.921387
+          ],
+          "zoom": 7
+     },
+     "Oregon": {
+          "coord_list": [
+               44.0,
+               -120.5
+          ],
+          "zoom": 7
+     },
+     "Pennsylvania": {
+          "coord_list": [
+               41.203323,
+               -77.19452700000001
+          ],
+          "zoom": 7
+     },
+     "Rhode Island": {
+          "coord_list": [
+               41.742325,
+               -71.74233199999999
+          ],
+          "zoom": 7
+     },
+     "South Carolina": {
+          "coord_list": [
+               33.836082,
+               -81.16372700000001
+          ],
+          "zoom": 7
+     },
+     "South Dakota": {
+          "coord_list": [
+               44.5,
+               -100.0
+          ],
+          "zoom": 7
+     },
+     "Tennessee": {
+          "coord_list": [
+               35.860119,
+               -86.660156
+          ],
+          "zoom": 7
+     },
+     "Texas": {
+          "coord_list": [
+               31.0,
+               -100.0
+          ],
+          "zoom": 7
+     },
+     "Utah": {
+          "coord_list": [
+               39.41922,
+               -111.95068400000001
+          ],
+          "zoom": 7
+     },
+     "Vermont": {
+          "coord_list": [
+               44.0,
+               -72.699997
+          ],
+          "zoom": 7
+     },
+     "Virginia": {
+          "coord_list": [
+               37.926868,
+               -78.024902
+          ],
+          "zoom": 7
+     },
+     "Washington": {
+          "coord_list": [
+               47.751076,
+               -120.74013500000001
+          ],
+          "zoom": 7
+     },
+     "West Virginia": {
+          "coord_list": [
+               39.0,
+               -80.5
+          ],
+          "zoom": 7
+     },
+     "Wisconsin": {
+          "coord_list": [
+               44.5,
+               -89.5
+          ],
+          "zoom": 7
+     },
+     "Wyoming": {
+          "coord_list": [
+               43.07597,
+               -107.290283
+          ],
+          "zoom": 7
+     }
+}

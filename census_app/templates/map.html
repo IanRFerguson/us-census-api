@@ -1,0 +1,17 @@
+<html>
+{% extends "base.html" %}
+
+<body>
+    {% block content %}
+    <div class="content_box">
+        <h2>Census API Choropleth Results</h2>
+        <h4>State: {{ state }}</h4>
+        <h4>API Call: {{ api_type }}</h4>
+    </div>
+    <div class="content_box">
+        <iframe src="{{ url_for('static', filename=filename ) }}" class="presentation_mapbox"></iframe>
+    </div>
+    {% endblock %}
+</body>
+
+</html>

@@ -12,6 +12,15 @@ nav a {
     text-decoration: none;
 }
 
+tbody {
+    text-align: center;
+}
+
+.presentation_mapbox {
+    width: 85%;
+    height: 85%;
+}
+
 .content_box {
     margin: 0 auto;
     text-align: center;

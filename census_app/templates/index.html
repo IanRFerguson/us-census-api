@@ -26,8 +26,8 @@
             <br>
             <select name="variable" id="variable" class="form-control" style="width: 35%; margin: 0 auto;">
                 <option value="#"></option>
-                {% for s in variable_options %}
-                <option value="{{ s }}">{{ s }}</option>
+                {% for x,y in variable_options.items() %}
+                <option value="{{ y }}">{{ x }}</option>
                 {% endfor %}
             </select>
             <br><br>

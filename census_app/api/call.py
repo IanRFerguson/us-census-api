@@ -7,9 +7,9 @@ import yaml
 from dotenv import load_dotenv
 import pandas as pd
 
-from census_app import here
+from census_app import here, data_path
 
-yaml_path = os.path.join(here, "api", "query_dictionary.yaml")
+yaml_path = os.path.join(data_path, "query_dictionary.yaml")
 logging.basicConfig(level=logging.INFO)
 load_dotenv(os.path.join(here, ".env"))
 
@@ -30,7 +30,7 @@ def generate_api_call(state: str, variable: str):
 
     # Read YAML with base API calls
     with open(yaml_path) as incoming:
-        call = yaml.safe_load(incoming)[variable.lower().replace(" ", "_")]
+        call = yaml.safe_load(incoming)[variable]
 
     # Convert state name to FIPS
     fips = state_name_to_fips(state_name=state)
@@ -52,6 +52,7 @@ def state_name_to_fips(state_name: str) -> str:
     * US state FIPS code
     """
 
+    # Use US module to lookup State object
     state_object = us.states.lookup(state_name)
 
     return state_object.fips
@@ -72,7 +73,7 @@ def get_api_data(state_name: str, variable: str) -> pd.DataFrame:
     # Format API call
     api_call = generate_api_call(state=state_name, variable=variable)
 
-    # Request and validate
+    # Send request to Census API and validate
     response = requests.get(api_call)
 
     if response.status_code != 200:
@@ -104,7 +105,7 @@ def formatter(dataframe: pd.DataFrame, variable: str) -> pd.DataFrame:
         return f"{df[state_fips_column]}{df[county_fips_column]}"
 
     # Total population cleanup
-    if variable == "Total Population":
+    if variable == "totalPopulation":
         logging.info("Cleaning total population responses...")
 
         # Convert column names
